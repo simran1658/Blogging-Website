@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(187, 106, 0, 0.937);
+  background-position: center;
+  background-size: cover;
+}
+
+.register-Container {
+  height: auto;
+  width: 600px;
+  padding: 20px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inputField {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.inputField input,
+.inputField label {
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  color: #fff;
+}
+
+.inputField label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.inputField input {
+  flex: 2;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+}
+
+.inputField input:focus {
+  outline: none;
+  border-bottom: 2px solid #fff;
+}
+
+button {
+  background-color: #fff;
+  color: rgb(76, 29, 0);
+  border: 1px solid rgb(76, 29, 0);
+  width: 100%;
+  height: 40px;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+button:hover {
+  color: #ffce80;
+  border-color: #fff;
+  background: rgb(76, 29, 0);
+}
+
+.inputField input.date {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  background: transparent;
+}
+
+.inputField input.date::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.inputField input.date::-webkit-inner-spin-button,
+.inputField input.date::-webkit-clear-button {
+  display: none;
+}
+
+/* Style autofill background and text color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgba(187, 106, 0, 0.937) inset !important; /* Change the background color */
+  -webkit-text-fill-color: #fff !important; /* Change the text color */
+}
